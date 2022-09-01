@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Employee List</title>
+{% endblock title  %}
+
+{% block content %}
+    <h1 class="mt-5">Employees</h1>
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Salary</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for employee in employees %}
+                <tr>
+                    <th scope="row">{{ employee.name }}</th>
+                    <td>{{ employee.role }}</td>
+                    <td>{{ employee.salary }}</td>
+                    <td>
+                        <a href="employee/edit/{{ employee.id }}">Edit</a>
+                        <a href="employee/delete/{{ employee.id }}">Remove</a>
+                    </td>
+                </tr>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <p>
+        <a href="employee/create/"><button type="button" class="btn btn-primary btn-lg">Add</button></a>
+    </p>
+
+{% endblock content %}
