@@ -10,12 +10,13 @@ Shows list of employees where you can add, edit / update, and remove / delete an
 ## Setting Up Environment 
 1. Open Terminal
 2. Install latest Python
-3. Install virtualenv: pip install virtualenv
-4. Create a virtual environment: python -m venv env
-5. Install django: pip install django
-6. Create a folder for your project: mkdir djangocrud
-7. Create a project: django-admin startproject main .
-8. See instruction below for running the app
+3. Install virtualenv: <code>pip install virtualenv</code>
+4. Create a virtual environment: <code>python -m venv env</code>
+5. Install django: <code>pip install django</code>
+6. Create a folder for your project: <code>mkdir djangocrud</code>
+7. Go to the project folder: <code>cd djangocrud</code>
+8. Create a project: <code>django-admin startproject main .</code>
+9. See instruction below for running the app
 
 ## Features
 - Admin login (Django default feature)
