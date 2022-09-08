@@ -29,6 +29,6 @@ Shows list of employees where you can add, edit / update, and remove / delete an
 ## Instruction
 1. Download the repository
 2. Open Terminal 
-3. Go to the djangocrud directory: cd djangocrud
-4. Run server: python manage.py runserver
+3. Go to the djangocrud directory: <code>cd djangocrud</code>
+4. Run server: <code>python manage.py runserver</code>
 5. Open browser and enter url: http://127.0.0.1:8000/
